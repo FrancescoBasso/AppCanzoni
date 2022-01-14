@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
 
         btnInserisci = (Button) findViewById(R.id.btnInserisci);
         txtTitolo = (EditText) findViewById(R.id.txtTitolo2);
-
+        gb = new Gestorebrani();
         btnInserisci.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                gb.addBrano();
+                gb.addBrano(txtTitolo.getText().toString(),"Pippo");
 
             }
         });
