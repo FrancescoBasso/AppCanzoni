@@ -1,17 +1,21 @@
 package com.example.appcanzoni;
-import java.util.ArrayList;
+import android.widget.ArrayAdapter;
 
-    public class Gestorebrani {
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Gestorebrani {
+
+
         ArrayList<Brano> ListaBrani;
 
         public Gestorebrani() {
             ListaBrani = new ArrayList<Brano>();
 
-
         }
 
-        public void addBrano(String titolo, String autore,) {
-            Brano br = new Brano(titolo, autore);
+        public void addBrano(String titolo, String autore, int durata, String datacreazione, String genere) {
+            Brano br = new Brano(titolo, autore, durata, datacreazione, genere);
             ListaBrani.add(br);
         }
 
