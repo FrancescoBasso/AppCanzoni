@@ -7,13 +7,13 @@ public class Brano {
     private String titolo;
     private int durata;
     private String autore;
-    private Date datacreazione;
+    private String datacreazione;
 
 
 
     private String genere;
 
-    public Brano(String titolo, String autore, int durata, Date datacreazione,String genere ) {
+    public Brano(String titolo, String autore, int durata, String datacreazione,String genere ) {
         this.titolo=titolo;
         this.autore=autore;
         this.durata=durata;
@@ -44,11 +44,11 @@ public class Brano {
         this.autore = autore;
     }
 
-    public Date getDatacreazione() {
+    public String getDatacreazione() {
         return datacreazione;
     }
 
-    public void setDatacreazione(Date datacreazione) {
+    public void setDatacreazione(String datacreazione) {
         this.datacreazione = datacreazione;
     }
 

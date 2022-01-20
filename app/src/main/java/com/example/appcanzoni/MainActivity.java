@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 String genSelez = spnGeneri.getSelectedItem().toString();
-                gb.addBrano(txtTitolo1.getText().toString(),txtAutore1.getText().toString(),Integer.parseInt()arseInttxtDurata1.getText().toString(),
+                gb.addBrano(txtTitolo1.getText().toString(),txtAutore1.getText().toString(),Integer.parseInt(txtDurata1.getText().toString()),
                         txtDatacreazione1.getText().toString(),genSelez);
 
             }
