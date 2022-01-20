@@ -53,6 +53,15 @@ public class Brano {
 
     public void setGenere(String genere) { this.genere = genere; }
 
-
+    @Override
+    public String toString() {
+        return "Brano{" +
+                "titolo='" + titolo + '\'' +
+                ", durata=" + durata +
+                ", autore='" + autore + '\'' +
+                ", datacreazione='" + datacreazione + '\'' +
+                ", genere='" + genere + '\'' +
+                '}'+ "\n\n";
+    }
 }
 

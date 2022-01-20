@@ -2,6 +2,7 @@ package com.example.appcanzoni;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -12,6 +13,7 @@ import android.widget.Spinner;
 public class MainActivity extends AppCompatActivity {
 
     Button btnInserisci;
+    Button btnApri;
     EditText txtTitolo1;
     EditText txtAutore1;
     EditText txtDurata1;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnInserisci = (Button) findViewById(R.id.btnInserisci);
+        btnApri = (Button) findViewById(R.id.btnApri);
         txtTitolo1 = (EditText) findViewById(R.id.txtTitolo1);
         txtAutore1 = (EditText) findViewById(R.id.txtAutore1);
         txtDurata1 = (EditText) findViewById(R.id.txtDurata1);
@@ -42,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
                 gb.addBrano(txtTitolo1.getText().toString(),txtAutore1.getText().toString(),Integer.parseInt(txtDurata1.getText().toString()),
                         txtDatacreazione1.getText().toString(),genSelez);
 
+            }
+        });
+
+        btnApri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StringBuilder string_fin = new StringBuilder();
+                string_fin = gb.ListaBrani();
+                Intent i = new Intent(getApplicationContext(),MainActivity2.class);
+                i.putExtra("string_fin",string_fin.toString());
+                startActivity(i);
             }
         });
 

@@ -1,8 +1,6 @@
 package com.example.appcanzoni;
-import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Gestorebrani {
 
@@ -19,12 +17,14 @@ public class Gestorebrani {
             ListaBrani.add(br);
         }
 
-        public void ListaBrani(){
+        public StringBuilder ListaBrani(){
             StringBuilder stBui = new StringBuilder();
             for (Brano brV : ListaBrani)
             {
                 stBui.append(brV.toString());
             }
+
+            return stBui;
         }
 
 
