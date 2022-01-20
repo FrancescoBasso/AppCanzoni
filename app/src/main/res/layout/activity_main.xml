@@ -10,24 +10,37 @@
         android:id="@+id/txtDurata2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="26dp"
         android:text="Durata"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtDurata1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutore1" />
 
     <EditText
         android:id="@+id/txtAutore1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtDurata2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAutore2" />
 
     <TextView
         android:id="@+id/txtTitolo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
         android:text="Titolo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.095"
@@ -41,65 +54,115 @@
         android:id="@+id/btnInserisci"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="48dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="569dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnGeneri" />
 
     <EditText
         android:id="@+id/txtTitolo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="17dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="79dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtAutore2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitolo2" />
 
     <TextView
         android:id="@+id/txtAutore2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="337dp"
+        android:layout_marginBottom="24dp"
         android:text="Autore"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="142dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtAutore1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitolo1" />
 
     <Spinner
         android:id="@+id/spnGeneri"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="131dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toTopOf="@+id/btnInserisci"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGenere" />
 
     <TextView
         android:id="@+id/txtDatacreazione2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="24dp"
         android:text="Data di creazione"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtDatacreazione1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDurata1" />
 
     <EditText
         android:id="@+id/txtDurata1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="33dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtDatacreazione2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDurata2" />
 
     <EditText
         android:id="@+id/txtDatacreazione1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="169dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatacreazione2" />
+
+    <TextView
+        android:id="@+id/txtGenere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="8dp"
+        android:text="Genere"
+        app:layout_constraintBottom_toTopOf="@+id/spnGeneri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatacreazione1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

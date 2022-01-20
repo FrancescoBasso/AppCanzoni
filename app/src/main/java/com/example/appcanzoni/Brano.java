@@ -8,9 +8,6 @@ public class Brano {
     private int durata;
     private String autore;
     private String datacreazione;
-
-
-
     private String genere;
 
     public Brano(String titolo, String autore, int durata, String datacreazione,String genere ) {
