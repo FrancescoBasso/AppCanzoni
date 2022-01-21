@@ -59,11 +59,11 @@ public class Brano {
 
 
         return "Brano :"+
-                " titolo='" + titolo + '\'' +
-                " durata=" + durata +
-                " autore='" + autore + '\'' +
-                " datacreazione='" + datacreazione + '\'' +
-                " genere='" + genere + '\'' + "\n\n";
+                " titolo = '" + titolo + '\'' +
+                " durata = " + durata + " min" +
+                " autore = '" + autore + '\'' +
+                " datacreazione = '" + datacreazione + '\'' +
+                " genere = '" + genere + '\'' + "\n\n";
 
     }
 }
