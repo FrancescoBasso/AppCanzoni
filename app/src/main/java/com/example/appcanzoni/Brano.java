@@ -10,6 +10,7 @@ public class Brano {
     private String datacreazione;
     private String genere;
 
+
     public Brano(String titolo, String autore, int durata, String datacreazione,String genere ) {
         this.titolo=titolo;
         this.autore=autore;
@@ -55,13 +56,15 @@ public class Brano {
 
     @Override
     public String toString() {
-        return "Brano{" +
-                "titolo='" + titolo + '\'' +
-                ", durata=" + durata +
-                ", autore='" + autore + '\'' +
-                ", datacreazione='" + datacreazione + '\'' +
-                ", genere='" + genere + '\'' +
-                '}'+ "\n\n";
+
+
+        return "Brano :"+
+                " titolo='" + titolo + '\'' +
+                " durata=" + durata +
+                " autore='" + autore + '\'' +
+                " datacreazione='" + datacreazione + '\'' +
+                " genere='" + genere + '\'' + "\n\n";
+
     }
 }
 
